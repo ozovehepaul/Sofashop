@@ -1,0 +1,347 @@
+/* re-usables starts here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* re-usables ends here */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Poppins:wght@300&family=Roboto+Slab&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* font-family: 'Merriweather', serif; */
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto Slab', serif; */
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* header section starts here */
+section {
+    /* border: 3px solid black; */
+}
+
+
+.menu {
+    /* border: 3px solid red; */
+    max-width: 1600px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.menu-items {
+    /* border: 3px solid greenyellow; */
+    display: flex;
+    background: var(--white);
+    padding: 20px 25px;
+    background-color: var(--white);
+
+}
+
+.menu-items li {
+    list-style: none;
+}
+
+.menu-items li:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    bottom: 16.5px;
+    height: 7px;
+    width: 50px;
+    margin-left: 16px;
+    background-color: var(--titleunderline);
+    /* background: blue; */
+}
+
+.menu-items a {
+    text-decoration: none;
+    margin: 20px;
+    color: var(--black);
+    font-size: 15.5px;
+}
+
+
+.header-section {
+    /* border: 3px solid green; */
+    position: relative;
+}
+
+.social-media {
+    /* border: 3px solid tomato; */
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 5px 0px 10px rgb(0 0 0 / 10%);
+    position: relative;
+}
+
+.icon-holder {
+    /* border: 3px solid blue; */
+    width: 250px;
+    height: 70px;
+    display: flex;
+    position: absolute;
+    top: 26px;
+    left: 14px;
+    font-size: 35px;
+    background: url(./assets/images/Shape.png);
+    background-repeat: no-repeat;
+    padding-left: 72px;
+    /* background-size: contain; */
+    z-index: 5;
+    /* margin: 24px 0 210px 0; */
+}
+
+.icon-holder li {
+    list-style: none;
+    font-weight: bolder;
+    font-size: 45px;
+    letter-spacing: -1px;
+}
+
+.icon-holder li:nth-child(1) {
+    color: var(--black);
+}
+
+.icon-holder li:nth-child(2) {
+    color: var(--chair);
+}
+
+
+.socialmedia-linkholder {
+    margin-top: 420px;
+    /* border: 3px solid yellow; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialmedia-linkholder a {
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--socialmedia);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    writing-mode: vertical-lr;
+    margin-bottom: 25px;
+    transform: rotate(-180deg);
+}
+
+.line {
+    border: 1px solid var(--text);
+    height: 90px;
+
+}
+
+.caption {
+    /* border: 3px solid blue; */
+    width: 500px;
+    position: absolute;
+    bottom: -2px;
+    left: 180px;
+    padding: 30px 20px 25px 40px;
+    box-shadow: 0px 2px 30px rgb(0 0 0 / 13%), inset 10px 0px 0px #fdbf44;
+    background: var(--white);
+    z-index: 5;
+}
+
+.caption span {
+    font-size: 15px;
+    color: var(--text);
+    letter-spacing: 4px;
+}
+
+.caption h4 {
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--black);
+    position: relative;
+}
+
+.caption h4::before {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    height: 10px;
+    width: 36%;
+    background-color: var(--titleunderline);
+
+
+}
+
+.caption p {
+    font-size: 17px;
+    color: var(--text);
+    line-height: 29px;
+    margin-top: 10px;
+}
+
+.btn-holder {
+    /* border: 3px solid yellow; */
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.caption button {
+    height: 45px;
+    width: 120px;
+    display: block;
+    background: var(--black);
+    border: 3px solid var(--black);
+    color: var(--white);
+    transition: 1.0s all ease;
+    font-size: 16px;
+    padding: 10px 18px;
+}
+
+.caption button:hover {
+    background: var(--white);
+    border: 3px solid var(--black);
+    width: 150px;
+    color: var(--black);
+    font-weight: bolder;
+    font-size: 20px;
+    transition: 1.0s all ease;
+}
+
+
+.slide-show {
+    /* border: 3px solid palegreen; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+
+}
+
+.slides {
+    /* border: 3px solid red; */
+    width: 100%;
+    background: url(./assets/images/sofashop.png);
+    background-position: center;
+    background-size: cover;
+    padding: 400px 0;
+    display: flex;
+    position: relative;
+    /* justify-content: flex-end; */
+}
+
+
+
+
+.slogan{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    /* border: 3px solid tomato; */
+    display: flex;
+}
+
+.slogan p{
+    font-size: 100px;
+    font-weight: 700;
+    color: var(--black);
+    letter-spacing: -5px;
+    
+}
+
+
+.slogan2{
+    position: absolute;
+    top: 40%;
+    left: 39.5%;
+    display: flex;
+    /* border: 3px solid yellow; */
+    height: 89px;
+    overflow: hidden;
+}
+.slogan2 span{
+ 
+    font-size: 100px;
+    font-weight: 700;
+    color: var(--chair);
+}
+
+.page-indicator{
+    /* border: 3px solid blue; */
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    color: var(--slideno);
+    font-size: 150px;
+    letter-spacing: -13px;
+}
+
+.arrow-slides{
+     display: flex;
+     justify-content: flex-end;
+     /* padding-top: 5px; */
+     /* border: 3px solid green; */
+    
+}
+
+.left-slide{
+    border: 3px solid transparent;
+    color: var(--black);
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    padding: 16px;
+    margin: 10px;
+    transition: 1.0s all ease;
+}
+
+.left-slide:hover{
+    background: var(--black);
+    color: var(--white);
+    border: 3px solid var(--black);
+    transition: 1.0s all ease;
+}
+.right-slide{
+    border: 3px solid transparent;
+    color: var(--black);
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    padding: 16px;
+    margin: 7px;
+    transition: 1.0s all ease;
+}
+
+
+.right-slide:hover{
+    background: var(--black);
+    color: var(--white);
+    border: 3px solid var(--black);
+    transition: 1.0s all ease;
+}
+
+/* header section ends here */
