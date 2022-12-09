@@ -159,8 +159,9 @@ section {
 
 
 .socialmedia-linkholder a:hover {
-    border-left: 3px solid var(--black);
+    border-left: 3px solid var(--socialmedia);
     transition: 0.5s all ease;
+    color: var(--chair);
 }
 
 .line {
