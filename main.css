@@ -7,7 +7,7 @@
 
 /* re-usables ends here */
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Poppins:wght@300&family=Roboto+Slab&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Poppins:wght@300&family=Roboto+Slab&display=swap'); */
 
 html {
     scroll-behavior: smooth;
@@ -15,8 +15,8 @@ html {
 
 body {
     /* font-family: 'Merriweather', serif; */
-    font-family: 'Poppins', sans-serif;
-    /* font-family: 'Roboto Slab', serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Roboto Slab', serif;
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -61,7 +61,7 @@ section {
     bottom: 16.5px;
     height: 7px;
     width: 50px;
-    margin-left: 16px;
+    margin-left: 27px;
     background-color: var(--titleunderline);
     /* background: blue; */
 }
@@ -70,7 +70,17 @@ section {
     text-decoration: none;
     margin: 20px;
     color: var(--black);
+    padding: 0 10px;
     font-size: 15.5px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    transition: 1.0s all ease;
+}
+
+.menu-items a:hover {
+    border: 2px solid var(--chair);
+    border-radius: 12px;
+    transition: 1.0s all ease;
 }
 
 
@@ -143,6 +153,14 @@ section {
     writing-mode: vertical-lr;
     margin-bottom: 25px;
     transform: rotate(-180deg);
+    transition: 0.5s all ease;
+    border-left: 3px solid transparent;
+}
+
+
+.socialmedia-linkholder a:hover {
+    border-left: 3px solid var(--black);
+    transition: 0.5s all ease;
 }
 
 .line {
@@ -220,7 +238,7 @@ section {
     width: 150px;
     color: var(--black);
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 16px;
     transition: 1.0s all ease;
 }
 
@@ -249,40 +267,42 @@ section {
 
 
 
-.slogan{
+.slogan {
     position: absolute;
-    top: 30%;
-    left: 25%;
+    top: 25%;
+    left: 19%;
     /* border: 3px solid tomato; */
     display: flex;
 }
 
-.slogan p{
+.slogan p {
     font-size: 100px;
     font-weight: 700;
     color: var(--black);
     letter-spacing: -5px;
-    
+
 }
 
 
-.slogan2{
+.slogan2 {
     position: absolute;
-    top: 40%;
-    left: 39.5%;
+    top: 37%;
+    left: 36%;
     display: flex;
+    letter-spacing: -5px;
     /* border: 3px solid yellow; */
-    height: 89px;
+    height: 103px;
     overflow: hidden;
+    padding-right: 10px;
 }
-.slogan2 span{
- 
-    font-size: 100px;
-    font-weight: 700;
+
+.slogan2 span {
+    font-size: 110px;
+    font-weight: 800;
     color: var(--chair);
 }
 
-.page-indicator{
+.page-indicator {
     /* border: 3px solid blue; */
     position: absolute;
     bottom: 0px;
@@ -292,15 +312,15 @@ section {
     letter-spacing: -13px;
 }
 
-.arrow-slides{
-     display: flex;
-     justify-content: flex-end;
-     /* padding-top: 5px; */
-     /* border: 3px solid green; */
-    
+.arrow-slides {
+    display: flex;
+    justify-content: flex-end;
+    /* padding-top: 5px; */
+    /* border: 3px solid green; */
+
 }
 
-.left-slide{
+.left-slide {
     border: 3px solid transparent;
     color: var(--black);
     width: 45px;
@@ -315,13 +335,14 @@ section {
     transition: 1.0s all ease;
 }
 
-.left-slide:hover{
+.left-slide:hover {
     background: var(--black);
     color: var(--white);
     border: 3px solid var(--black);
     transition: 1.0s all ease;
 }
-.right-slide{
+
+.right-slide {
     border: 3px solid transparent;
     color: var(--black);
     width: 45px;
@@ -337,11 +358,25 @@ section {
 }
 
 
-.right-slide:hover{
+.right-slide:hover {
     background: var(--black);
     color: var(--white);
     border: 3px solid var(--black);
     transition: 1.0s all ease;
+}
+
+
+.emoji-suprise {
+    font-size: 70px;
+    text-align: center;
+    color: var(--black);
+    font-weight: bolder;
+    width: 80%;
+    height: 80%;
+    margin: 30px;
+    padding: 30px;
+    background-color: white;
+    display: none;
 }
 
 /* header section ends here */

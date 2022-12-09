@@ -1,0 +1,17 @@
+@media screen and (max-width:1000px) {
+
+
+    section{
+        display: none;
+    }
+
+    .header-section{
+        display: none;
+    }
+
+    .emoji-suprise{
+        display: block;
+        /* justify-content: center;
+        align-items: center; */
+    }  
+}
